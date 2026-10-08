@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map | Bakerz Bite</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --primary:#6B3E26;
+            --secondary:#D99A5B;
+            --accent:#F4C27A;
+            --cream:#FFF8F0;
+            --dark:#2B1A12;
+            --text:#4A3428;
+        }
+
+        *{ margin:0; padding:0; box-sizing:border-box; }
+
+        body{
+            font-family:"Montserrat",sans-serif;
+            background:var(--cream);
+            color:var(--text);
+            line-height:1.7;
+        }
+
+        header{
+            background:var(--primary);
+            color:#fff;
+            text-align:center;
+            padding:60px 20px;
+        }
+
+        header h1{ font-size:40px; font-weight:900; }
+        header h1 span{ color:var(--accent); }
+        header p{ margin-top:10px; opacity:.85; }
+
+        main{
+            max-width:1100px;
+            margin:-30px auto 60px;
+            padding:0 20px;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+            gap:25px;
+        }
+
+        .map-card{
+            background:#fff;
+            border-radius:20px;
+            padding:30px;
+            box-shadow:0 12px 35px rgba(43,26,18,.12);
+        }
+
+        .map-card h2{
+            color:var(--primary);
+            font-size:22px;
+            font-weight:800;
+            margin-bottom:5px;
+            padding-bottom:12px;
+            border-bottom:3px solid var(--accent);
+        }
+
+        .map-card small{
+            display:block;
+            margin:10px 0 5px;
+            color:var(--secondary);
+            font-weight:800;
+            letter-spacing:1px;
+            font-size:12px;
+        }
+
+        .map-card ul{ list-style:none; }
+
+        .map-card li{ padding:3px 0; }
+
+        .map-card li ul{ padding-left:20px; border-left:2px solid var(--accent); margin:4px 0 6px 6px; }
+
+        a{
+            color:var(--text);
+            text-decoration:none;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        a:hover{ color:var(--secondary); padding-left:4px; }
+
+        footer{
+            text-align:center;
+            padding:25px;
+            background:var(--dark);
+            color:#fff;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bakerz <span>Bite</span> Site Map</h1>
+    <p>Find everything on our website in one place.</p>
+</header>
+
+<main>
+
+    <section class="map-card">
+        <h2>Main Pages</h2>
+        <ul>
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About Us</a></li>
+            <li><a href="../index.html#merchandise">Merchandise</a></li>
+            <li><a href="../index.html#offers">Offers</a></li>
+            <li><a href="../index.html#gallery">Gallery</a></li>
+            <li><a href="../index.html#reviews">Reviews</a></li>
+            <li><a href="../index.html#faq">FAQ</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </section>
+
+    <section class="map-card">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="../index.html#menu">Full Menu</a>
+                <ul>
+                    <li><a href="../index.html#cakes">Cakes</a></li>
+                    <li><a href="../index.html#pastries">Pastries</a></li>
+                    <li><a href="../index.html#cookies">Cookies</a></li>
+                    <li><a href="../index.html#brownies">Brownies</a></li>
+                    <li><a href="../index.html#croissants">Croissants</a></li>
+                    <li><a href="../index.html#cupcakes">Cupcakes</a></li>
+                    <li><a href="../index.html#desserts">Pies &amp; Desserts</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="map-card">
+        <h2>Shop &amp; Account</h2>
+        <small>OPEN ON THE HOME PAGE</small>
+        <ul>
+            <li><a href="../index.html#merchandise">Merchandise Store</a></li>
+            <li><a href="../index.html#menu">Add Items to Cart</a></li>
+            <li><a href="../index.html">Login / Sign Up</a></li>
+            <li><a href="../index.html">View Cart &amp; Place Order</a></li>
+        </ul>
+    </section>
+
+    <section class="map-card">
+        <h2>Contact Details</h2>
+        <ul>
+            <li>Phone: +92 300 1234567</li>
+            <li>Email: hello@bakerzbite.com</li>
+            <li>Location: Karachi, Pakistan</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>© 2026 Bakerz Bite. Where smiles are served daily.</footer>
+
+</body>
+</html>
